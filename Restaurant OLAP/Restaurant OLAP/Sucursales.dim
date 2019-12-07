@@ -1,0 +1,259 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e398cb9a-9458-409e-a6a8-061c394976ac" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sucursales</ID>
+  <Name>Sucursales</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="196bdea9-4543-4b21-bbeb-8a5947f94cc8">
+    <DataSourceViewID>Restaurant</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="18111d2b-56d4-42fa-bb9a-fa013ac2aabe">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0cde7b77-ed88-4fdf-93f4-fe50eff9ffd9">
+      <ID>Rfc</ID>
+      <Name>Rfc</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="031386bf-9fdc-42e4-9463-f524a82977d5">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9fc66e9-c9d3-44a9-8c7b-938be65ba5af">
+            <TableID>dbo_sucursales</TableID>
+            <ColumnID>rfc</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6e95f046-87b2-4711-a2dc-2ce2015336d5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0463f72b-738c-4d6d-b12e-6b3cf97d3306">
+            <TableID>dbo_sucursales</TableID>
+            <ColumnID>numregion</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="032de7dd-3038-47d5-a516-59ff2c252087">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="432fd449-eeb4-4c1f-b5eb-15389d4f0917">
+            <TableID>dbo_sucursales</TableID>
+            <ColumnID>numzona</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2afc4b60-0f40-44b8-bc39-18c747198fdc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44cf6de1-9e94-4d4f-bd70-af0325e9c428">
+            <TableID>dbo_sucursales</TableID>
+            <ColumnID>numsucursal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="27b68a01-439c-47c3-bd82-10c120e67f70">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4557e12e-196a-442e-ba28-1f623a7b7f73">
+          <TableID>dbo_sucursales</TableID>
+          <ColumnID>rfc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="75f19350-5b63-4f71-ac7f-472be33ed863">
+          <AttributeID>Zonas - Rfc</AttributeID>
+          <Name>Zonas - Rfc</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+    <Attribute dwd:design-time-name="ddf5ada5-d6f0-417e-b066-cd706911b2e6">
+      <ID>Zonas - Rfc</ID>
+      <Name>Zonas - Rfc</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8345d75-3111-449d-a286-c462e7f54f04">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8078bc8-9c20-4b48-983f-2c2b521ee7dc">
+            <TableID>dbo_zonas</TableID>
+            <ColumnID>rfc</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="0c19b736-3eea-4b1b-9f67-447990132bc8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="740c7a04-2a1e-4e6e-9969-79b230867a10">
+            <TableID>dbo_zonas</TableID>
+            <ColumnID>numzona</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="18218dab-7f02-47c3-a56b-760a54f58ddc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04dae776-93af-46e0-855d-2e8f027d94d2">
+            <TableID>dbo_zonas</TableID>
+            <ColumnID>numregion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e3c1c565-ba0d-4c99-9867-9f90e6d0292c">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9aa834ac-e7c5-4f4d-81e2-fc4160e53400">
+          <TableID>dbo_zonas</TableID>
+          <ColumnID>rfc</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4fd297b8-d4f1-4f74-a3ff-008c08ce3d13">
+          <AttributeID>Numregion</AttributeID>
+          <Name>Numregion</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+    <Attribute dwd:design-time-name="5ea65642-9360-4b58-a1cb-81c60dd29332">
+      <ID>Numregion</ID>
+      <Name>Numregion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="838adac8-58c6-4171-bf46-c42a89e6ff97">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="264c6f13-382a-4c9d-a77d-2bf9a1e72fcc">
+            <TableID>dbo_regiones</TableID>
+            <ColumnID>numregion</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2f097c25-a288-42ba-ac9f-1bd1fbcccbb9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff90e2c8-300b-4d10-b7b1-6826d283784a">
+            <TableID>dbo_regiones</TableID>
+            <ColumnID>rfc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="477d7096-8dca-4508-8b58-bfa08297ab06">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="10e2e589-979e-45fc-9714-5bce228650be">
+          <TableID>dbo_regiones</TableID>
+          <ColumnID>numregion</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7d5b23aa-9c72-49c7-9f3a-739990e59f85">
+          <AttributeID>Restaurantes - Rfc</AttributeID>
+          <Name>Restaurantes - Rfc</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+    <Attribute dwd:design-time-name="e3f32989-c8a0-43e5-8596-0de8c1f11851">
+      <ID>Restaurantes - Rfc</ID>
+      <Name>Restaurantes - Rfc</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="437969d9-879e-42c9-be36-af217182f919">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b352dfc2-c2bf-4749-84b1-19600437dd93">
+            <TableID>dbo_restaurantes</TableID>
+            <ColumnID>rfc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a5fb59ba-3159-4c4f-8944-7a9b0bbf7a45">
+          <AttributeID>Usuario</AttributeID>
+          <Name>Usuario</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa508255-ee8e-4888-95de-7c5faaef6ed4">
+      <ID>Usuario</ID>
+      <Name>Usuario</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b720302-c946-4839-8299-eab3a7263b4a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88720934-a232-4565-9839-4d509efb24e1">
+            <TableID>dbo_usuarios</TableID>
+            <ColumnID>usuario</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0870581c-54de-4bef-baf1-722e7d838006">
+          <AttributeID>Paises - Codpais</AttributeID>
+          <Name>Paises - Codpais</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7092045c-29b3-4578-9b99-b7c8b219a9c5">
+          <AttributeID>Timezoneid</AttributeID>
+          <Name>Timezoneid</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="b39f076e-124a-4337-80f5-871ada7f8082">
+      <ID>Paises - Codpais</ID>
+      <Name>Paises - Codpais</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0c117cb-a51a-4112-b4c1-50ebb89106fc">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="befa16a3-d654-47e3-affa-427ca5ff3d51">
+            <TableID>dbo_paises</TableID>
+            <ColumnID>codpais</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef4c36bc-5262-4539-ab4b-aeba9ded75f1">
+      <ID>Timezoneid</ID>
+      <Name>Timezoneid</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c2001a3-2952-4b43-b417-43c15ae0fbe3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7055c1c-0db4-43d5-86ff-386a75650a3c">
+            <TableID>dbo_timezone</TableID>
+            <ColumnID>timezoneid</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+  </Attributes>
+</Dimension>

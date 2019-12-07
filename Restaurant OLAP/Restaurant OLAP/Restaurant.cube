@@ -1,0 +1,224 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5d160127-843b-4ffc-a690-6fc854a25bc6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Restaurant</ID>
+  <Name>Restaurant</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="906b9ea4-c73f-417d-bbd2-ccd577d1ecf4">
+      <ID>Sucursales</ID>
+      <Name>Sucursales</Name>
+      <DimensionID>Sucursales</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="37691a7f-e464-4158-914c-7f0a5fe7452c">
+          <AttributeID>Rfc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e9283bb4-424f-4b25-9026-34a91b6d41cc">
+          <AttributeID>Zonas - Rfc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41354409-f81d-4d6f-b5c5-e8fc5663f752">
+          <AttributeID>Numregion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a45ee44-7bb1-4309-98ca-39078a6c5c50">
+          <AttributeID>Restaurantes - Rfc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b0a8ae6-65eb-49bb-b6a4-6159e9cca1fa">
+          <AttributeID>Usuario</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4682b0f4-630f-4289-8901-d5386026c3ef">
+          <AttributeID>Paises - Codpais</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4eb9fc77-0f7f-4db8-8d2f-25dbf796d4c8">
+          <AttributeID>Timezoneid</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="2169fe79-8095-408a-acd7-035b1d54574c">
+      <ID>Ventas</ID>
+      <Name>Ventas</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bc335426-1255-47e9-beb5-95775167bc25">
+          <ID>Bebidas</ID>
+          <Name>Bebidas</Name>
+          <Source dwd:design-time-name="c3864d09-7982-4fda-acb0-471d3eb9d76a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="aa7ca2ff-d513-4bba-bacc-90e9c251fdb9">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>bebidas</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="121307ea-b44b-4053-a9b1-757fdcfaa8bb">
+          <ID>Alimentos</ID>
+          <Name>Alimentos</Name>
+          <Source dwd:design-time-name="68fdfcc2-7d63-4874-8d96-c180aa7333ad">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="65d95fcf-5d63-482f-9b41-d25f71f642fb">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>alimentos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5dde3292-d4f9-415a-a808-d02818a05857">
+          <ID>Otros</ID>
+          <Name>Otros</Name>
+          <Source dwd:design-time-name="d4765674-ccb3-46c4-95e9-0c0914cb45d3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8a95999e-7a12-4c8b-aec9-9c6a9b066e19">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>otros</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ccdf5b7e-6792-468c-9bbc-f27f841d0530">
+          <ID>Descuentos</ID>
+          <Name>Descuentos</Name>
+          <Source dwd:design-time-name="959fcd13-c7b8-4c3b-a9a2-d738f9c5572b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="96daf43f-92ba-4214-82da-f296f25d213f">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>descuentos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c11cceea-ec0b-44a9-b8c2-cd13e84fd318">
+          <ID>Comedor</ID>
+          <Name>Comedor</Name>
+          <Source dwd:design-time-name="f39407ac-5882-4be3-8cfc-cb54d5df6772">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="718e4521-f13b-483b-8497-9e964030cd73">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>comedor</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6f8d8dfb-cfc5-405c-b87d-7a0b5bce2dcc">
+          <ID>Domicilio</ID>
+          <Name>Domicilio</Name>
+          <Source dwd:design-time-name="37115c2b-f45d-41bf-8ea2-9d1d038ef508">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61d0fbed-90d0-42a7-a9bf-cf77effd094b">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>domicilio</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a9eefcec-64b3-4cc9-9b0b-d451ab9659e5">
+          <ID>Rapido</ID>
+          <Name>Rapido</Name>
+          <Source dwd:design-time-name="ea085e1d-c05b-48f3-9deb-49729f49d469">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="abc0d92e-e852-40c0-9d2b-0724f4893e3e">
+              <TableID>dbo_ventas</TableID>
+              <ColumnID>rapido</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a8e25ffc-f7eb-449f-8207-f71ff6302f53">
+          <ID>Ventas Count</ID>
+          <Name>Ventas Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5a5222d3-6f4d-4f51-916e-8fc98d17646c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="7c597796-6925-4cf1-8724-510e61b0e97d">
+              <TableID>dbo_ventas</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8bad59fa-96b5-436f-8283-467ea87f7490">
+          <CubeDimensionID>Sucursales</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="388fde91-62cc-424b-a9d5-48a2bd70ba59">
+              <AttributeID>Rfc</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="32fb2213-ec87-4963-afcb-c8a6416d12a3">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b67a05d5-aef2-42e0-8162-68a58ba869da">
+                    <TableID>dbo_ventas</TableID>
+                    <ColumnID>rfc</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fa6c6006-bbd9-4850-bf7a-01813144948b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="594fd2b9-38c1-491c-b4a1-3b69c9a03854">
+                    <TableID>dbo_ventas</TableID>
+                    <ColumnID>numregion</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1b8028c8-e061-47a8-91f1-02cd65f43f7c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b82043c7-674b-4652-8fbf-8c95324dec89">
+                    <TableID>dbo_ventas</TableID>
+                    <ColumnID>numzona</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0fb50f16-3410-4872-ba27-6f75e33e2d76">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="156fee3d-091f-4bfa-b154-89eb75e45c9f">
+                    <TableID>dbo_ventas</TableID>
+                    <ColumnID>numsucursal</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="29beed94-9487-4022-8bc6-60195a28848b">
+    <DataSourceViewID>Restaurant</DataSourceViewID>
+  </Source>
+</Cube>

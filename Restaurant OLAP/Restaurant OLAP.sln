@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Restaurant OLAP", "Restaurant OLAP\Restaurant OLAP.dwproj", "{E7B4ED47-C87F-4608-B833-7746AADE73FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B4ED47-C87F-4608-B833-7746AADE73FA}.Development|Default.ActiveCfg = Development
+		{E7B4ED47-C87F-4608-B833-7746AADE73FA}.Development|Default.Build.0 = Development
+		{E7B4ED47-C87F-4608-B833-7746AADE73FA}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,128 @@
+﻿<Infos>
+  <Item name="Restaurant.cube">
+    <Time>633762240512339738</Time>
+    <Hash length="16">
+      <b>142</b>
+      <b>62</b>
+      <b>9</b>
+      <b>143</b>
+      <b>193</b>
+      <b>216</b>
+      <b>210</b>
+      <b>253</b>
+      <b>62</b>
+      <b>58</b>
+      <b>75</b>
+      <b>0</b>
+      <b>82</b>
+      <b>63</b>
+      <b>48</b>
+      <b>47</b>
+    </Hash>
+  </Item>
+  <Item name="Restaurant OLAP.database">
+    <Time>633762238012659738</Time>
+    <Hash length="16">
+      <b>3</b>
+      <b>232</b>
+      <b>185</b>
+      <b>102</b>
+      <b>244</b>
+      <b>157</b>
+      <b>147</b>
+      <b>163</b>
+      <b>79</b>
+      <b>208</b>
+      <b>151</b>
+      <b>227</b>
+      <b>216</b>
+      <b>47</b>
+      <b>137</b>
+      <b>56</b>
+    </Hash>
+  </Item>
+  <Item name="Restaurant.dsv">
+    <Time>633762238815589738</Time>
+    <Hash length="16">
+      <b>214</b>
+      <b>47</b>
+      <b>236</b>
+      <b>157</b>
+      <b>21</b>
+      <b>192</b>
+      <b>53</b>
+      <b>67</b>
+      <b>238</b>
+      <b>190</b>
+      <b>131</b>
+      <b>237</b>
+      <b>1</b>
+      <b>143</b>
+      <b>221</b>
+      <b>34</b>
+    </Hash>
+  </Item>
+  <Item name="Restaurant.ds">
+    <Time>633762238674969738</Time>
+    <Hash length="16">
+      <b>77</b>
+      <b>164</b>
+      <b>31</b>
+      <b>36</b>
+      <b>197</b>
+      <b>201</b>
+      <b>42</b>
+      <b>226</b>
+      <b>146</b>
+      <b>86</b>
+      <b>27</b>
+      <b>70</b>
+      <b>177</b>
+      <b>74</b>
+      <b>175</b>
+      <b>41</b>
+    </Hash>
+  </Item>
+  <Item name="Sucursales.dim">
+    <Time>633762240507159738</Time>
+    <Hash length="16">
+      <b>113</b>
+      <b>172</b>
+      <b>133</b>
+      <b>179</b>
+      <b>71</b>
+      <b>105</b>
+      <b>89</b>
+      <b>200</b>
+      <b>247</b>
+      <b>167</b>
+      <b>250</b>
+      <b>92</b>
+      <b>131</b>
+      <b>175</b>
+      <b>179</b>
+      <b>247</b>
+    </Hash>
+  </Item>
+  <Item name="Restaurant.partitions">
+    <Time>633762240510099738</Time>
+    <Hash length="16">
+      <b>54</b>
+      <b>238</b>
+      <b>240</b>
+      <b>124</b>
+      <b>47</b>
+      <b>187</b>
+      <b>210</b>
+      <b>158</b>
+      <b>19</b>
+      <b>235</b>
+      <b>25</b>
+      <b>29</b>
+      <b>46</b>
+      <b>44</b>
+      <b>243</b>
+      <b>11</b>
+    </Hash>
+  </Item>
+</Infos>
